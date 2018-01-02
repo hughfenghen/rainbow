@@ -11,7 +11,7 @@
     [team-view]])
 
 (defn start []
-  (.log js/console @app-state)
+  (devtools.core/install! [:formatters :hints :async])
   (reagent/render-component [app]
                             (. js/document (getElementById "app"))))
 

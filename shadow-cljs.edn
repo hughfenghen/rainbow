@@ -22,10 +22,4 @@
                    ;; serve the public directory over http at port 8700
                    :http-root    "public"
                    :http-port    8700
-                   :preloads     [devtools.preload]}
-                   :external-config
-                    {:devtools/configuration
-                     {:features-to-install [:formatters :hints :async]
-                      :fn-symbol "F"
-                      :print-config-overrides true}}
-                  }}}
+                   :preloads     [devtools.preload]}}}}
