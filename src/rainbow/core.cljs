@@ -1,17 +1,18 @@
 (ns rainbow.core
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent :refer [atom]])
+  (:require [rainbow.pages.team :refer [team-view]]))
 
 ;; define your app data so that it doesn't get over-written on reload
 
 (defonce app-state (atom {:text "Hello world!"}))
 
-(defn hello-world []
+(defn app []
   [:div
-   [:h1 (:text @app-state)]
-   [:h3 "Edit this and watch it change 1112!"]])
+    [team-view]])
 
 (defn start []
-  (reagent/render-component [hello-world]
+  (.log js/console @app-state)
+  (reagent/render-component [app]
                             (. js/document (getElementById "app"))))
 
 (defn ^:export init []
