@@ -9,9 +9,7 @@
                          {:name "项目二" :progress 20}]))
 
 (defn team-view []
-  (println "main:  component-DID-mount" ^:abc #{:a :b :c})
   (go (let [response (<! (http/get "http://localhost:3000/api/team"))]
-    (println (-> response :body :data))
     (reset! projects (-> response :body :data))))
   (fn []
     [:div
@@ -41,4 +39,4 @@
                   :padding "0 10px 0 5px"
                   :width "100%"}}
     [:div {:style {:flex 1}} name]
-    [:div {:style {:margin ""}} ">"]]])
+    [:div ">"]]])
