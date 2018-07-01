@@ -4,6 +4,7 @@
 
  :dependencies [[reagent "0.8.0-alpha2"]
                 [binaryage/devtools "0.9.8"]
+                [secretary "1.2.3"]
                 [cljs-http "0.1.44"]]
 
  ;; set an nrepl port for connection to a REPL.
