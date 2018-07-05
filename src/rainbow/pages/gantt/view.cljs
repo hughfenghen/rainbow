@@ -3,8 +3,14 @@
             [reagent.core :as r :refer [atom]]
             [echarts]
             [cljs-http.client :as http]
-            [cljs.core.async :refer [<!]])
+            [cljs.core.async :refer [<!]]
+            [rainbow.service.init :refer [fb]])
   (:require-macros [cljs.core.async.macros :refer [go]]))
+
+(.. fb
+    auth
+    (createUserWithEmailAndPassword "xxx" "xxx")
+    (catch #(.error js/console %)))
 
 (defn show-revenue-chart
   []
