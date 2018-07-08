@@ -9,8 +9,25 @@
 
 (.. fb
     auth
-    (createUserWithEmailAndPassword "xxx" "xxx")
+    (signInWithEmailAndPassword "liujun_91@foxmail.com" "liujun_91")
     (catch #(.error js/console %)))
+
+(.. fb
+    auth
+    (onAuthStateChanged (fn [changed]
+                          (do (js/console.log "登录状态变化" changed)
+                              (let [hw (.. fb
+                                           (functions)
+                                           (httpsCallable "helloWorld"))]
+                                (js/console.log 1111 (hw))
+                                (.then (hw) #(js/console.log 111 %)))))))
+
+(.. fb
+    firestore
+    (collection "project")
+    (doc "WLlsXOxhCJHRmSQ9hkQd")
+    get
+    (then #(set! js/window.ttt %)))
 
 (defn show-revenue-chart
   []

@@ -1,0 +1,54 @@
+[debug] [2018-07-07T07:59:13.346Z] ----------------------------------------------------------------------
+[debug] [2018-07-07T07:59:13.348Z] Command:       /Users/fenghen/.nvm/versions/node/v8.9.0/bin/node /usr/local/bin/firebase deploy --only functions:addMessage
+[debug] [2018-07-07T07:59:13.348Z] CLI Version:   3.19.3
+[debug] [2018-07-07T07:59:13.348Z] Platform:      darwin
+[debug] [2018-07-07T07:59:13.348Z] Node Version:  v8.9.0
+[debug] [2018-07-07T07:59:13.348Z] Time:          Sat Jul 07 2018 15:59:13 GMT+0800 (CST)
+[debug] [2018-07-07T07:59:13.348Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-07T07:59:13.357Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-07T07:59:13.357Z] > authorizing via signed-in user
+[debug] [2018-07-07T07:59:13.359Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hughfenghen  
+  
+ Sat Jul 07 2018 15:59:13 GMT+0800 (CST)
+[debug] [2018-07-07T07:59:14.687Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T07:59:14.688Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hughfenghen/tokens  
+  
+ Sat Jul 07 2018 15:59:14 GMT+0800 (CST)
+[debug] [2018-07-07T07:59:15.710Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T12:15:31.597Z] ----------------------------------------------------------------------
+[debug] [2018-07-07T12:15:31.600Z] Command:       /Users/fenghen/.nvm/versions/node/v8.9.0/bin/node /usr/local/bin/firebase deploy --only functions --debug
+[debug] [2018-07-07T12:15:31.600Z] CLI Version:   3.19.3
+[debug] [2018-07-07T12:15:31.600Z] Platform:      darwin
+[debug] [2018-07-07T12:15:31.600Z] Node Version:  v8.9.0
+[debug] [2018-07-07T12:15:31.600Z] Time:          Sat Jul 07 2018 20:15:31 GMT+0800 (CST)
+[debug] [2018-07-07T12:15:31.600Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-07T12:15:31.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-07T12:15:31.610Z] > authorizing via signed-in user
+[debug] [2018-07-07T12:15:31.612Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hughfenghen  
+  
+ Sat Jul 07 2018 20:15:31 GMT+0800 (CST)
+[debug] [2018-07-07T12:15:33.454Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T12:15:33.455Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hughfenghen/tokens  
+  
+ Sat Jul 07 2018 20:15:33 GMT+0800 (CST)
+[debug] [2018-07-07T12:15:37.443Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T12:18:12.240Z] ----------------------------------------------------------------------
+[debug] [2018-07-07T12:18:12.243Z] Command:       /Users/fenghen/.nvm/versions/node/v8.9.0/bin/node /usr/local/bin/firebase deploy --only functions --debug
+[debug] [2018-07-07T12:18:12.244Z] CLI Version:   3.19.3
+[debug] [2018-07-07T12:18:12.244Z] Platform:      darwin
+[debug] [2018-07-07T12:18:12.244Z] Node Version:  v8.9.0
+[debug] [2018-07-07T12:18:12.244Z] Time:          Sat Jul 07 2018 20:18:12 GMT+0800 (CST)
+[debug] [2018-07-07T12:18:12.244Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-07T12:18:12.253Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-07T12:18:12.253Z] > authorizing via signed-in user
+[debug] [2018-07-07T12:18:12.255Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hughfenghen  
+  
+ Sat Jul 07 2018 20:18:12 GMT+0800 (CST)
+[debug] [2018-07-07T12:18:13.802Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T12:18:13.803Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hughfenghen/tokens  
+  
+ Sat Jul 07 2018 20:18:13 GMT+0800 (CST)
+[debug] [2018-07-07T12:18:16.574Z] <<< HTTP RESPONSE 200

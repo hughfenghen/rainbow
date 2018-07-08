@@ -8,21 +8,6 @@
 (defonce projects (atom [{:name "项目一" :progress 90}
                          {:name "项目二" :progress 20}]))
 
-(defn team-view []
-  (go (let [response (<! (http/get "http://localhost:3000/api/team"))]
-    (reset! projects (-> response :body :data))))
-  (fn []
-    [:div
-     [header "团队视图"]
-     [:section
-      [:h4 {:style {:padding "0 3px"}} "前端研发组"]
-      (for [prj @projects
-            :let [name (:name prj)
-                  progress (:progress prj)
-                  key name]]
-        ^{:key key}
-        [prj-bar name progress])]]))
-
 (defn prj-bar [name progress]
   [:div {:style {:border-width "1px 0"
                  :border-style "solid"
@@ -40,3 +25,18 @@
                   :width "100%"}}
     [:div {:style {:flex 1}} name]
     [:div ">"]]])
+
+(defn team-view []
+  (go (let [response (<! (http/get "http://localhost:3000/api/team"))]
+        (reset! projects (-> response :body :data))))
+  (fn []
+    [:div
+     [header "团队视图"]
+     [:section
+      [:h4 {:style {:padding "0 3px"}} "前端研发组"]
+      (for [prj @projects
+            :let [name (:name prj)
+                  progress (:progress prj)
+                  key name]]
+        ^{:key key}
+        [prj-bar name progress])]]))
