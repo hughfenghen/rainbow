@@ -7,5 +7,5 @@
    [:nav.navbar.navbar-default.navbar-fixed-top
     [:div.container {:style {:text-align "center"
                              :line-height "50px"
-                             :font-size "20px" }}
+                             :font-size "20px"}}
      title]]])

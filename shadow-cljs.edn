@@ -5,7 +5,9 @@
  :dependencies [[reagent "0.8.0-alpha2"]
                 [binaryage/devtools "0.9.8"]
                 [secretary "1.2.3"]
-                [cljs-http "0.1.44"]]
+                [cljs-http "0.1.44"]
+                [proto-repl "0.3.1"]
+                [com.andrewmcveigh/cljs-time "0.5.2"]]
 
  ;; set an nrepl port for connection to a REPL.
  :nrepl        {:port 8777}
@@ -24,4 +26,10 @@
                    ;; serve the public directory over http at port 8700
                    :http-root    "public"
                    :http-port    8700
-                   :preloads     [devtools.preload]}}}}
+                   :preloads     [devtools.preload]}}
+  :test {:target :browser-test
+         :test-dir "target/test"
+         :ns-regexp "-spec$"
+         :devtools
+         {:http-port 8606
+          :http-root "target/test"}}}}
