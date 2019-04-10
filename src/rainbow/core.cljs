@@ -14,7 +14,7 @@
 
 (defn render [comp]
   (r/render-component [comp]
-                            (js/document.getElementById "app")))
+                      (js/document.getElementById "app")))
 
 (defroute home-path "/" []
   (prn "home-paths113")
